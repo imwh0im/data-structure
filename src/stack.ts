@@ -1,4 +1,4 @@
-export class stack<T>{
+export class Stack<T>{
   constructor(
     private maxSize: number,
   ) {}
