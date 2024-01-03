@@ -19,7 +19,7 @@ export class Queue<T> {
 
   enqueue(item: T) {
     if (this.isFull()) {
-      throw new Error('full stack');
+      throw new Error('full queue');
     }
 
     this.items.push(item);
@@ -27,14 +27,14 @@ export class Queue<T> {
 
   dequeue() {
     if (this.isEmpty()) {
-      throw new Error('empty stack');
+      throw new Error('empty queue');
     }
     return this.items.shift();
   }
 
   peek() {
     if (this.isEmpty()) {
-      throw new Error('empty stack');
+      throw new Error('empty queue');
     }
     return this.items[0];
   }
