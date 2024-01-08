@@ -5,7 +5,7 @@ export class CircularQueue<T> {
     this.maxSize++;
   }
 
-    private items: T[] =[];
+    private items: T[] = [];
 
     private front: number = 0;
     private rear: number = 0;
