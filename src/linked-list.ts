@@ -1,4 +1,4 @@
-class Node<T> {
+export class Node<T> {
   constructor(
     public data: T,
     public next: Node<T> | null = null,
@@ -14,7 +14,7 @@ export class LinkedList<T> {
 
   public head: Node<T>;
 
-  insertFist(data: T) {
+  insertFirst(data: T) {
     this.head = new Node<T>(data, this.head);
   }
 

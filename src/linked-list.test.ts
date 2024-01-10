@@ -3,7 +3,7 @@ import { LinkedList } from "./linked-list"
 describe('Linked List Test', () => {
   it('case 1', () => {
     const linkedList = new LinkedList(1);
-    linkedList.insertFist(2);
+    linkedList.insertFirst(2);
     expect(linkedList.head.data).toEqual(2);
     linkedList.insert(3, linkedList.head);
     expect(linkedList.head.next?.data).toEqual(3);
