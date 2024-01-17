@@ -7,3 +7,4 @@ Typescript 로 자료 구조 구현
 - [deque](docs/deque.md)
 - [linked-list](docs/linked-list.md)
 - [circular-linked-list](docs/circular-linked-list.md)
+- [binary tree link](docs/binary-tree-link.md)
