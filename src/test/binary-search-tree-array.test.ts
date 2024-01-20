@@ -1,4 +1,4 @@
-import { BinarySearchTreeArray } from "./binary-search-tree-array"
+import { BinarySearchTreeArray } from "../binary-search-tree-array"
 
 describe('binary search tree', () => {
   it('case 1', () => {

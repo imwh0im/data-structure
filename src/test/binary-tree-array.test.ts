@@ -1,4 +1,4 @@
-import { BinaryTreeArray } from "./binary-tree-array"
+import { BinaryTreeArray } from "../binary-tree-array"
 
 describe('binary tree array', () => {
   it('case 1', () => {

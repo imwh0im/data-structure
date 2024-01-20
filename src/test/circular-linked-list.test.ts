@@ -1,4 +1,4 @@
-import { CircularLinkedList } from "./circular-linked-list"
+import { CircularLinkedList } from "../circular-linked-list"
 
 describe('circular linked list', () => {
   it('case 1', () => {

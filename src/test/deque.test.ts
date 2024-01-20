@@ -1,4 +1,4 @@
-import { Deque } from "./deque";
+import { Deque } from "../deque";
 
 describe('deque Test', () => {
   it('case 1 (Like Stack)', () => {

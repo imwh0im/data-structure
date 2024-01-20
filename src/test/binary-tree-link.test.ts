@@ -1,4 +1,4 @@
-import { BinaryTreeLink } from "./binary-tree-link";
+import { BinaryTreeLink } from "../binary-tree-link";
 
 describe('binary tree', () => {
   it('case 1', () => {
