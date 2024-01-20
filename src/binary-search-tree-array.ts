@@ -29,11 +29,38 @@ export class BinarySearchTree {
     }
   }
 
-  delete(data: number): void {
-    let index = this.search(data);
+  delete(data: number, idx = 1): void {
+    let index = this.search(data, idx);
+
     if (index) {
       const leftTreeIndex = index * 2;
       const rightTreeIndex = index * 2 + 1;
+
+      if (
+        !this.Tree[leftTreeIndex] &&
+        !this.Tree[rightTreeIndex]
+      ) {
+        delete this.Tree[index];
+        return;
+      }
+
+      if (
+        this.Tree[leftTreeIndex] ||
+        this.Tree[rightTreeIndex]
+      ) {
+        let successorIndex = this.Tree[leftTreeIndex] ? leftTreeIndex : rightTreeIndex;
+        while (true) {
+          const tempSuccessorIndex = this.Tree[leftTreeIndex] ?
+            successorIndex * 2 + 1 :
+            successorIndex * 2;
+          if (!this.Tree[tempSuccessorIndex]) {
+            break;
+          }
+          successorIndex = tempSuccessorIndex;
+        }
+        this.Tree[index] = this.Tree[successorIndex];
+        return this.delete(this.Tree[successorIndex], successorIndex);
+      }
       
       if (
         this.Tree[leftTreeIndex] &&
@@ -47,20 +74,7 @@ export class BinarySearchTree {
           }
           successorIndex = tempSuccessorIndex;
         }
-        this.Tree[index] = this.Tree[successorIndex];
-        return this.delete(successorIndex);
       }
-
-      if (
-        this.Tree[leftTreeIndex] ||
-        this.Tree[rightTreeIndex]
-      ) {
-        const successorIndex = this.Tree[leftTreeIndex] ? leftTreeIndex : rightTreeIndex;
-        this.Tree[index] = this.Tree[successorIndex];
-        return this.delete(successorIndex);
-      }
-
-      delete this.Tree[index];
     }
   }
 }

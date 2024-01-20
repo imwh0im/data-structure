@@ -1,4 +1,4 @@
-import { BinarySearchTree } from "./binary-search-tree"
+import { BinarySearchTree } from "./binary-search-tree-array"
 
 describe('binary search tree', () => {
   it('case 1', () => {
@@ -14,14 +14,15 @@ describe('binary search tree', () => {
 
     bst.delete(1);
 
-    result = bst.search(10);
+    result = bst.search(8);
     expect(result).toEqual(1);
 
-    console.log(bst.Tree);
-    result = bst.search(8)
-    expect(result).toEqual(6);
+    result = bst.search(20)
+    expect(result).toEqual(15)
+  
     bst.delete(15);
-    result = bst.search(8);
-    expect(result).toEqual(3);
+    console.log(bst.Tree)
+    result = bst.search(20);
+    expect(result).toEqual(7);
   })
 })
