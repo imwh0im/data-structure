@@ -1,4 +1,4 @@
-export class BinarySearchTree {
+export class BinarySearchTreeArray {
   public Tree: number[] = [];
 
   private InsertIndex: number | null = null;

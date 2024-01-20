@@ -1,8 +1,8 @@
-import { BinarySearchTree } from "./binary-search-tree-array"
+import { BinarySearchTreeArray } from "./binary-search-tree-array"
 
 describe('binary search tree', () => {
   it('case 1', () => {
-    const bst = new BinarySearchTree();
+    const bst = new BinarySearchTreeArray();
     bst.insert(1);
     bst.insert(10);
     bst.insert(15);
