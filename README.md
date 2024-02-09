@@ -11,3 +11,4 @@ Typescript 로 자료 구조 구현
 - [binary tree array](docs/binary-tree-array.md)
 - [binary search tree array](docs/binary-search-tree-array.md)
 - [binary search tree link](docs/binary-search-tree-link.md)
+- [heap](docs/heap.md)
