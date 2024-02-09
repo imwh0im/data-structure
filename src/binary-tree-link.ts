@@ -52,7 +52,6 @@ export class BinaryTreeLink<T> {
 
   preorderTraversal(node: Node<T> | null) {
     if (node !== null) {
-      console.log(node.data)
       this.preorderTraversal(node.left)
       this.preorderTraversal(node.right);
     }
@@ -61,7 +60,6 @@ export class BinaryTreeLink<T> {
   inorderTraversal(node: Node<T> | null) {
     if (node !== null) {
       this.inorderTraversal(node.left);
-      console.log(node.data);
       this.inorderTraversal(node.right);
     }
   }
@@ -70,7 +68,6 @@ export class BinaryTreeLink<T> {
     if (node !== null) {
       this.inorderTraversal(node.left);
       this.inorderTraversal(node.right);
-      console.log(node.data);
     }
   }
 

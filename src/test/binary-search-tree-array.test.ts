@@ -21,7 +21,6 @@ describe('binary search tree', () => {
     expect(result).toEqual(15)
   
     bst.delete(15);
-    console.log(bst.Tree)
     result = bst.search(20);
     expect(result).toEqual(7);
   })
