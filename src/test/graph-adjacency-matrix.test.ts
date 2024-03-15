@@ -1,4 +1,4 @@
-import { AdacencyMatrix } from "../adjacency-matrix"
+import { AdacencyMatrix } from "../graph-adjacency-matrix"
 
 describe('adjacency matrix', () => {
   it('case 1', () => {
