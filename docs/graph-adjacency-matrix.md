@@ -1,4 +1,4 @@
-### adjacency matrix
+### graph adjacency matrix
 #### 정의
 - 정점의 수가 N 이라면 N * N 의 2차원 배열로 표현
 - 두 정점의 간선 여부를 O(1) 의 복잡도로 확인 가능
