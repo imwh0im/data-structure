@@ -1,8 +1,8 @@
-import { AdacencyMatrix } from "../graph-adjacency-matrix"
+import { AdjacencyMatrix } from "../graph-adjacency-matrix"
 
 describe('adjacency matrix', () => {
   it('case 1', () => {
-    const adjMat = new AdacencyMatrix(10);
+    const adjMat = new AdjacencyMatrix(10);
     adjMat.insertEdge(1, 9);
     adjMat.insertEdge(0, 3);
     adjMat.insertEdge(2, 5);
@@ -12,7 +12,7 @@ describe('adjacency matrix', () => {
   })
 
   it('DFS', () => {
-    const adjMat = new AdacencyMatrix(4);
+    const adjMat = new AdjacencyMatrix(4);
     adjMat.insertEdge(0, 2);
     adjMat.insertEdge(2, 1);
     adjMat.insertEdge(1, 3);
@@ -26,7 +26,7 @@ describe('adjacency matrix', () => {
   });
 
   it('BFS', () => {
-    const adjMat = new AdacencyMatrix(6);
+    const adjMat = new AdjacencyMatrix(6);
 
     adjMat.insertEdge(0, 3);
     adjMat.insertEdge(0, 4);

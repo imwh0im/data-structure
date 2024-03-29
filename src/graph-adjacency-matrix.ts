@@ -1,6 +1,6 @@
 import { CircularQueue } from "./circular-queue";
 
-export class AdacencyMatrix {
+export class AdjacencyMatrix {
   constructor(
     private verticesCount: number,
     private adjMat: number[][] = []
