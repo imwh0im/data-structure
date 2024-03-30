@@ -13,3 +13,4 @@ Typescript 로 자료 구조 구현
 - [binary search tree link](docs/binary-search-tree-link.md)
 - [heap](docs/heap.md)
 - [graph adjacency matrix](docs/graph-adjacency-matrix.md)
+- [graph adjacency list](docs/graph-adjacency-list.md)

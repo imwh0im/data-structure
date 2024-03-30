@@ -31,7 +31,19 @@ export class AdjacencyList {
     this.adjList[targetValue] = node;
   }
 
-  deepFirstSearch() {}
+  getAdjacency(value: number) {
+    if (value >= this.n) {
+      throw new Error();
+    }
 
-  BreathFirstSearch() {}
+    const edgeList = [];
+
+    let vertex = this.adjList[value]?.next;
+    while (vertex) {
+      edgeList.push(vertex.data);
+      vertex = vertex.next;
+    }
+
+    return edgeList;
+  }
 }
